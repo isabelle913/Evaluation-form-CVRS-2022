@@ -1,6 +1,6 @@
 # Stagaires-CVRS (cvrs-formulaire-stagiaires)
 
-Evaluation of trainees
+Evaluation form to be used internally for technical students. This is my first Quasar project
 
 ## Install the dependencies
 ```bash
