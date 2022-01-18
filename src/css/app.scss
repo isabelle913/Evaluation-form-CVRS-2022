@@ -1,0 +1,170 @@
+// app global css in SCSS form
+.page {
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+  min-height: 600px;
+  margin: auto;
+  position: relative;
+  //   background: pink;
+}
+// Disposition navbar
+.title-desktop {
+  font-size: 21px;
+}
+
+h1 {
+  text-align: center;
+}
+.criteres {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.info-group {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+}
+
+//  radio
+.question {
+  font-size: 1.1rem;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.comment-item {
+  max-width: 600px;
+}
+
+// boutons
+.btn-enregistrer-group {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-enregistrer {
+  padding: 10px 25px;
+}
+
+.btn-next-step-group {
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.btn-next-step {
+  padding: 10px 20px;
+}
+
+// Tableau des réponses
+.table-response {
+  margin: 30px auto;
+  width: 80%;
+}
+.table-response-head {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(176, 227, 214);
+}
+.table-response-body {
+  padding-left: 10px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-response-body-response {
+  width: 75px;
+  //   background: lightblue;
+  text-align: center;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.table-response-body:nth-child(odd) {
+  background: rgba(176, 227, 214, 0.2);
+}
+
+.table-response-body:last-of-type {
+  border-bottom: 2px solid rgb(176, 227, 214);
+}
+
+.table-response-comment-group {
+  margin: 30px auto;
+  width: 80%;
+}
+.table-response-comment-group h6 {
+  margin: 20px 0;
+}
+.table-response-comment-group p {
+  margin-bottom: 40px;
+}
+
+// Media queries
+@media screen and (min-width: 900px) {
+  .q-footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page {
+    width: 90%;
+    height: auto;
+  }
+  .title-desktop {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .q-tab__label {
+    font-size: 10px !important;
+  }
+  .q-tab {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 460px) {
+  h1 {
+    font-size: 2rem;
+
+    line-height: 2rem;
+  }
+  .criteres {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .criteres {
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+  }
+}
